@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>N2M Contact Us</title>
+    <link rel="icon" href="N2Mfavicon.png" type="image/x-icon">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+    body {
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        background-image: url("bgs.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+            background: transparent;
+            color: rgb(255, 255, 255);
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    }
+    header h1 {
+            margin: 0;
+            font-size: 1.8em;
+    }
+    nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+    }
+    nav ul li {
+            margin: 0 15px;
+    }
+    nav ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 1em;
+            padding: 5px 15px; /* เพิ่ม padding เพื่อสร้างระยะห่างในกรอบ */
+            transition: all 0.3s ease-in-out;
+    }
+    nav ul li a:hover {
+            border: 2px solid rgb(255, 255, 255); /* เพิ่มกรอบ */
+            border-radius: 25px; /* ทำให้ขอบโค้งเป็นรูปแคปซูล */
+            background-color: #96e2d6; /* เพิ่มสีพื้นหลังเมื่อ hover */
+            color: rgb(52, 52, 49);
+    }
+    table {
+        margin: auto;
+        width: 100%; /* ขยายตารางให้เต็มหน้ากว้าง */
+        border-collapse: collapse; /* ลบเส้นขอบระหว่างเซลล์ */
+    }
+    td {
+        text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+        padding: 10px; /* เพิ่มระยะห่างระหว่างเซลล์ */
+        width: 50%;
+    }
+    .contact {
+        font-family: 'Noto Sans Thai', serif;
+        background: transparent;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .contact-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .contact-form, .company-address {
+        background: linear-gradient(90deg, #ffffff, #aaeae5);
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 95%;
+    }
+    
+    .contact-form label {
+        text-align: center;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .contact-form button {
+        font-family: 'Noto Sans Thai', serif;
+        background: linear-gradient(90deg, #39d5f0, #b0aaea);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .company-address h3 {
+        margin-top: 0;
+    }
+
+    .company-address p {
+        margin: 5px 0;
+    }
+    footer {
+        background: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+</style>
+<body>
+    <header>
+        <h1><img >N2M Innovation </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact">
+        <h2 style="color: rgb(80, 81, 91);">ติดต่อเรา</h2>
+        
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <label for="name">ชื่อของคุณ:</label>
+                                <input type="text" id="name" name="name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                               <label for="email">อีเมล:</label>
+                                <input type="email" id="email" name="email" required> 
+                            </td>
+                            <td>
+                                <label for="phone">เบอร์โทรศัพท์:</label>
+                                <input type="tel" id="phone" name="phone" required>  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="lineid">Line ID:</label>
+                                <input type="text" id="lineid" name="lineid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="title">Title:</label>
+                                <input type="text" id="lineid" name="lineid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="message">ข้อความของคุณ:</label>
+                                <textarea id="message" name="message" required style="width: 100%; height: 150px;"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                               <button type="submit" class="cta-button">ส่งข้อความ</button>  
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <!-- Company Address -->
+                        <div class="company-address">
+                            <h3 style="color: rgb(80, 81, 91);">ที่อยู่บริษัท</h3>
+                            <p style="color: rgb(80, 81, 91);">123 ถนนธุรกิจ, แขวงธุรกิจ, เขตธุรกิจ, กรุงเทพมหานคร 10110</p>
+                            <p style="color: rgb(80, 81, 91);">เบอร์โทรศัพท์: 02-123-4567</p>
+                            <p style="color: rgb(80, 81, 91);">อีเมล: contact@business.com</p>
+                            <p style="color: rgb(80, 81, 91);">Line ID: businessline</p>
+                        </div>  
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <!-- Map -->
+                        <div style="width: 100%; height: 400px;">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20689.207778909346!2d100.58054543502!3d13.788019930780509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29c2d4d7c20ef%3A0x281e16244d5667c6!2z4LmA4Lih4Li34Lit4LiH4LmE4LiX4Lii4Lig4Lix4LiX4LijIOC4hOC4reC4oeC5gOC4nuC4peC5h-C4geC4i-C5jA!5e0!3m2!1sth!2sth!4v1737210199615!5m2!1sth!2sth" 
+                                width="600" 
+                                height="450" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div> 
+                    </td>
+                </tr>
+            </table>   
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Website Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
